@@ -10,7 +10,7 @@
 /* global */
 :root {
   --primary-color-dark: #0d0b0c;
-  --primary-color-regular: #2d2933;
+  --primary-color-regular: #615f68;
   --primary-color-light: #3b383f;
   --secondary-color: #f7914d;
   --third-color: #fff;
@@ -35,6 +35,9 @@
 .btn:hover {
   background: var(--third-color);
   color: var(--secondary-color);
+}
+section {
+  padding: 5% 8%;
 }
 h2 {
   font-size: 30px;
@@ -212,7 +215,6 @@ address a:hover i {
 .aboutme-skill-section {
   display: flex;
   background-color: var(--primary-color-regular);
-  padding: 5% 8%;
 }
 
 /* skills side */
@@ -252,6 +254,90 @@ address a:hover i {
   flex: 1;
 }
 
+/* PROJECTS */
+.projects-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  /* border: 1px solid red; */
+}
+.projects-container {
+  flex: 1;
+  color: #f7914d;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-gap: 70px;
+  max-width: max-content;
+}
+.projects-section p a {
+  color: #f7914d;
+  text-decoration: underline;
+}
+.project-container {
+  /* border: 1px solid red; */
+  width: 450px;
+  height: 720px;
+  border-radius: 5px;
+  box-shadow: 2px 2px 5px 1px rgba(0, 0, 0, 0.45);
+  display: flex;
+  flex-direction: column;
+}
+.img-container {
+  border-bottom: 1px solid rgba(0, 0, 0, 0.22);
+}
+.img-container img {
+  width: 450px;
+}
+.project-container .text-container {
+  flex: 1;
+  /* border: 1px solid red; */
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 20px;
+}
+.project-container h3 {
+  font-size: 24px;
+  font-weight: 700;
+  color: var(--primary-color-dark);
+  margin-bottom: 15px;
+}
+.project-container h4 {
+  font-size: 20px;
+  font-weight: 700;
+  color: var(--primary-color-regular);
+  margin-bottom: 10px;
+}
+.project-container p {
+  font-size: 16px;
+  font-weight: 400;
+  color: var(--primary-color-light);
+}
+.project-container .techs {
+  display: flex;
+  justify-content: space-around;
+  /* border: 1px solid red; */
+}
+.project-container .techs li {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.project-container .techs li img {
+  width: 50px;
+  margin-bottom: 5px;
+}
+.projects-access-btn {
+  margin-bottom: 20px;
+}
+.projects-access-btn .btn {
+  font-size: 15px;
+  border-radius: 3px;
+}
+.live-demo {
+  margin-right: 10px;
+}
+
 /* * footer */
 
 /* responsive */
@@ -269,8 +355,9 @@ address a:hover i {
 }
 
 @media (max-width: 950px) {
-  nav svg {
-    width: 180px;
+  nav img {
+    width: 70px;
+    padding: 15px 0px;
   }
   nav ul {
     display: none;
