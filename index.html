@@ -6,30 +6,35 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
     <link rel="stylesheet" href="./style.css" />
-    <link rel="icon" href="./Assets/image_removebg_preview_aCB_icon.ico" />
+    <link rel="icon" href="./Assets/LOGO-GD-ORANGE-GRAY.ico" />
 
     <script
       src="https://kit.fontawesome.com/53a00de455.js"
       crossorigin="anonymous"
     ></script>
 
+    <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+
     <title>Gustavo Developer</title>
   </head>
   <body>
     <!-- Criar ícone para voltar ao topo da página -->
+    <a href="#header" id="return-btn" class="return-btn"
+      ><i class="fa-solid fa-chevron-up"></i
+    ></a>
     <!-- Criar diversar formas de contato em varios pontos da página [call to action] -->
 
-    <header>
+    <header id="header">
       <nav>
         <a><img src="./Assets/LOGO-GD-ORANGE-GRAY.png" alt="" width="90" /></a>
 
         <ul>
-          <li><a href="">About</a></li>
-          <li><a href="">Skills</a></li>
-          <li><a href="">Projects</a></li>
+          <li><a href="#skills">About</a></li>
+          <li><a href="#skills">Skills</a></li>
+          <li><a href="#projects">Projects</a></li>
         </ul>
 
-        <a class="btn" href="">Contact Me</a>
+        <a class="btn" href="#contact">Contact Me</a>
       </nav>
       <a class="mobile-menu" href=""><i class="fa-solid fa-bars"></i></a>
     </header>
@@ -87,7 +92,7 @@
         <!-- </div> -->
       </section>
 
-      <section class="aboutme-skill-section">
+      <section id="skills" class="aboutme-skill-section">
         <div class="skills-container">
           <h2>MY SKILLS</h2>
           <ul>
@@ -180,32 +185,33 @@
         </div>
       </section>
 
-      <section class="projects-section">
+      <section id="projects" class="projects-section">
         <h2>PROJECTS</h2>
         <div class="projects-container">
           <div class="project-container">
             <div class="img-container">
               <img
-                src="./Assets/project-1.png"
+                src="./Assets/Projects/starbucks.png"
                 alt="Imagem do Site Clone Starbucks"
               />
             </div>
-            <div class="text-container">
-              <h3>Clone Starbucks</h3>
-              <h4>Website Clone</h4>
-              <div class="card-inner">
-                <div class="front">
-                  <p>
-                    This project is a clone of the
-                    <a href="https://www.starbucks.com.br/">Starbucks</a>
-                    Website. The goal of the project was to learn and improve my
-                    HTML, CSS and JavaScript skills along with the responsive
-                    part of the project as well.
-                  </p>
+            <div class="project-bottom-container">
+              <div class="text-container">
+                <div>
+                  <h3>Clone Starbucks</h3>
+                  <h4>Website Clone</h4>
                 </div>
+
+                <p>
+                  This project is a clone of the
+                  <a href="https://www.starbucks.com.br/">Starbucks</a>
+                  Website. The goal of the project was to learn and improve my
+                  HTML, CSS and JavaScript skills along with the responsive part
+                  of the project as well.
+                </p>
               </div>
-              <!-- Criar um cartão Verso na parte da descrição para se torna a parte das tecnologias -->
-              <div class="back">
+
+              <div class="techs-container">
                 <h4>Technologies:</h4>
                 <ul class="techs">
                   <li>
@@ -222,7 +228,8 @@
                   </li>
                 </ul>
               </div>
-              <div class="projects-access-btn">
+
+              <div class="project-btn-container">
                 <a class="live-demo btn" href="">Live Demo</a>
                 <a class="source-code btn" href="">Source Code</a>
               </div>
@@ -230,34 +237,132 @@
           </div>
 
           <div class="project-container">
-            Projeto 2 - App Leitor e Cadastrador de Validades Através de API
+            <div class="img-container">
+              <img
+                src="./Assets/Projects/eduford.png"
+                alt="Imagem do Site Eduford"
+              />
+            </div>
+            <div class="project-bottom-container">
+              <div class="text-container">
+                <div>
+                  <h3>Eduford</h3>
+                  <h4>University Website</h4>
+                </div>
+
+                <p>
+                  Website of a made-up university. Created with study purpose
+                  only, designed using HTML, CSS and Javascript, the website was
+                  made responsive.
+                </p>
+              </div>
+
+              <div class="techs-container">
+                <h4>Technologies:</h4>
+                <ul class="techs">
+                  <li>
+                    <img src="./Assets/html-5.png" alt="Logo HTML" />
+                    <p>HTML</p>
+                  </li>
+                  <li>
+                    <img src="./Assets/css-3.png" alt="Logo CSS" />
+                    <p>CSS</p>
+                  </li>
+                  <li>
+                    <img src="./Assets/js.png" alt="JavaScript Logo" />
+                    <p>JavaScript</p>
+                  </li>
+                </ul>
+              </div>
+
+              <div class="project-btn-container">
+                <a class="live-demo btn" href="">Live Demo</a>
+                <a class="source-code btn" href="">Source Code</a>
+              </div>
+            </div>
           </div>
 
           <div class="project-container">
-            Projeto 3 - E-Commerce em React e Usando API
-          </div>
+            <div class="img-container">
+              <img
+                src="./Assets/Projects/shopper.PNG"
+                alt="Imagem do Site Shopper"
+              />
+            </div>
+            <div class="project-bottom-container">
+              <div class="text-container">
+                <div>
+                  <h3>Shopper</h3>
+                  <h4>E-Commerce</h4>
+                </div>
 
-          <div class="project-container">
-            Projeto 4 - Projeto WebScrapping Python DSR Automatica
-          </div>
+                <p>
+                  Shopper is an online store that allows buyers browse through
+                  multiple categories of clothes and add their products to cart.
+                </p>
+              </div>
 
-          <div class="project-container">
-            Projeto 5 - Landing Page Agave Arquitetura
-          </div>
+              <div class="techs-container">
+                <h4>Technologies:</h4>
+                <ul class="techs">
+                  <li>
+                    <img src="./Assets/react.svg" alt="Logo React" />
+                    <p>React</p>
+                  </li>
+                  <li>
+                    <img src="./Assets/tailwind.svg" alt="Logo Tailwind" />
+                    <p>Tailwind</p>
+                  </li>
+                  <li>
+                    <img src="./Assets/html-5.png" alt="Logo HTML" />
+                    <p>HTML</p>
+                  </li>
+                  <li>
+                    <img src="./Assets/css-3.png" alt="Logo CSS" />
+                    <p>CSS</p>
+                  </li>
+                  <li>
+                    <img src="./Assets/js.png" alt="JavaScript Logo" />
+                    <p>JavaScript</p>
+                  </li>
+                  <li>
+                    <img src="./Assets/node-js.png" alt="Logo Node" />
+                    <p>Node</p>
+                  </li>
+                </ul>
+              </div>
 
-          <div class="project-container">Projeto 6 - iBar | Bill-It</div>
+              <div class="project-btn-container">
+                <a class="live-demo btn" href="">Live Demo</a>
+                <a class="source-code btn" href="">Source Code</a>
+              </div>
+            </div>
+          </div>
         </div>
       </section>
 
-      <section class="contacts-section">
-        <form action="">
-          Formulário para envio de mensagem diretamente no Email
+      <section id="contact" class="contact-section">
+        <h2>CONTACT ME</h2>
+        <form onsubmit="sendMessage(); reset(); return false;">
+          <input type="text" id="name" placeholder="Your Name" required />
+          <input type="email" id="email" placeholder="Your Email" required />
+          <input type="text" id="phone" placeholder="Your Phone" required />
+          <textarea
+            id="message"
+            rows="8"
+            placeholder="Type in your message..."
+            required
+          ></textarea>
+          <button class="btn" type="submit">Send Message</button>
         </form>
       </section>
     </main>
 
     <footer>
-      <p>Copyright</p>
+      <p>© Copyright 2023 GustavoDev All rights reserved</p>
     </footer>
+
+    <script src="./btnToTop.js"></script>
+    <script src="./mailSender.js"></script>
   </body>
 </html>
