@@ -26,17 +26,21 @@
 
     <header id="header">
       <nav>
-        <a><img src="./Assets/LOGO-GD-ORANGE-GRAY.png" alt="" width="90" /></a>
+        <a href="/"
+          ><img src="./Assets/LOGO-GD-ORANGE-GRAY.png" alt="" width="90"
+        /></a>
 
-        <ul>
-          <li><a href="#skills">About</a></li>
-          <li><a href="#skills">Skills</a></li>
-          <li><a href="#projects">Projects</a></li>
+        <ul id="nav-menu">
+          <li><a href="#skills" onclick="closeMobileMenu()">About</a></li>
+          <li><a href="#skills" onclick="closeMobileMenu()">Skills</a></li>
+          <li><a href="#projects" onclick="closeMobileMenu()">Projects</a></li>
         </ul>
 
         <a class="btn" href="#contact">Contact Me</a>
       </nav>
-      <a class="mobile-menu" href=""><i class="fa-solid fa-bars"></i></a>
+      <button id="mobile-menu" class="mobile-menu">
+        <i class="fa-solid fa-bars"></i>
+      </button>
     </header>
 
     <main>
@@ -362,7 +366,7 @@
       <p>© Copyright 2023 GustavoDev All rights reserved</p>
     </footer>
 
-    <script src="./btnToTop.js"></script>
+    <script src="./buttons.js"></script>
     <script src="./mailSender.js"></script>
   </body>
 </html>
