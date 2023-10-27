@@ -10,7 +10,7 @@
 /* global */
 :root {
   --primary-color-dark: #0d0b0c;
-  --primary-color-regular: #615f68;
+  --primary-color-regular: #1b1d1f;
   --primary-color-light: #3b383f;
   --secondary-color: #f7914d;
   --third-color: #fff;
@@ -31,6 +31,9 @@
   outline: none;
   cursor: pointer;
   box-shadow: 2px 2px 5px 1px rgba(0, 0, 0, 0.45);
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 .btn:hover {
   background: var(--third-color);
@@ -108,7 +111,6 @@ header {
   padding: 0px 8%;
   background: var(--primary-color-dark);
   color: var(--content-text-color);
-  /* height: 10vh; */
 }
 nav {
   flex: 1;
@@ -201,8 +203,6 @@ h2 strong {
 }
 .hero h1 {
   font-size: 68px;
-  /* margin-bottom: 65px; */
-  /*  */
   margin-bottom: 6vh;
   /*  */
 }
@@ -214,18 +214,12 @@ h2 strong {
   align-items: center;
   margin: 0 auto;
 }
-.fa-download:hover {
-  color: var(--secondary-color);
-  background-color: var(--secondary-color);
-}
+
 address {
   display: flex;
   align-items: center;
   justify-content: center;
-  /* padding: 80px 0px;*/
-  /*  */
   padding: 5vh 0px;
-  /*  */
   gap: 25px;
 }
 address a {
@@ -260,6 +254,7 @@ address a:hover i {
 .aboutme-skill-section {
   display: flex;
   background-color: var(--primary-color-regular);
+  /* background: #1b1d1f; */
 }
 
 /* skills side */
@@ -283,6 +278,10 @@ address a:hover i {
   padding: 10px;
   background-color: rgba(255, 255, 255, 0.35);
   box-shadow: 3px 3px 7px 1px rgba(0, 0, 0, 0.22);
+}
+.skills-container ul li:hover {
+  scale: 1.1;
+  transition: 0.15s ease-out;
 }
 .skills-container img {
   margin-bottom: 20px;
@@ -396,46 +395,59 @@ address a:hover i {
   margin-right: 10px;
 }
 /* FORM SECTION */
+
 .contact-section {
+  background-image: url('./Assets/Background/formBackground.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  padding: 0;
+}
+.contact-section-container-blur {
+  backdrop-filter: blur(10px);
+  display: flex;
+  padding: 5% 16%;
+}
+
+.contact-section-left {
+  flex: 1;
+  background-image: url('./Assets/Background/formBackground.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  border-radius: 12px 0px 0px 12px;
+}
+.contact-section-right {
+  flex: 1;
+  flex-direction: column;
+  background: #1b1d1f;
+  padding: 80px 40px;
+  border-radius: 0px 12px 12px 0px;
+}
+.new-contact-section-right h2 {
+  text-align: center;
+}
+.contact-section-right form {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  align-items: center;
-  background: var(--primary-color-regular);
 }
-.contact-section form {
-  display: flex;
-  flex-direction: column;
-  /* align-items: center; */
-  /* gap: 20px; */
-  /* border: 1px solid red; */
-  background-color: var(--third-color);
+.contact-section-right form input,
+.contact-section-right form textarea {
+  margin-bottom: 20px;
+  border: none;
+  outline: none;
   padding: 20px;
-  border-radius: 15px;
-  width: 1200px;
-  max-width: 100%;
-  color: rgb(247, 145, 77);
-  box-shadow: 1px 1px 5px 1px rgba(0, 0, 0, 0.22);
+  border-radius: 5px;
 }
-.contact-section input,
-.contact-section textarea {
-  border: 0;
-  outline: 0;
-  margin: 10px;
-  padding: 10px;
-  background: #f5f5f5;
-  font-size: 16px;
-  border-radius: 6px;
-}
-.contact-section textarea {
-  margin-bottom: 30px;
+.contact-section-right form textarea {
+  margin-bottom: 70px;
   resize: none;
 }
-.contact-section button {
-  width: 350px;
-  max-width: 90%;
-  margin: 0 auto;
+.contact-section-right .btn {
+  max-width: 250px;
 }
+
 /* * footer */
 
 footer {
@@ -470,6 +482,9 @@ footer p {
   .skills-container ul {
     grid-template-columns: 1fr 1fr 1fr;
   }
+  .contact-section-container-blur {
+    padding-inline: 8%;
+  }
 }
 @media (max-width: 1050px) {
   .skills-container ul {
@@ -477,7 +492,7 @@ footer p {
     gap: 10px;
   }
   .projects-container {
-    grid-template-columns: repeat(1, 300px);
+    grid-template-columns: repeat(1, 450px);
     grid-gap: 40px;
   }
 }
@@ -576,6 +591,21 @@ footer p {
   .aboutme-container {
     padding: 5% 5%;
   }
+  .projects-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .contact-section-container-blur {
+    padding-inline: 4%;
+  }
+  .contact-section-left {
+    display: none;
+  }
+  .contact-section-right {
+    opacity: 0.85;
+    background: var(--primary-color-regular);
+  }
 }
 @media (max-width: 700px) {
   .hero h1 {
@@ -606,19 +636,31 @@ footer p {
     width: 100%;
   }
   .skills-container ul {
-    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr;
   }
   .skills-container ul li {
     align-items: center;
-    width: 90px;
-    height: 90px;
+    width: 80px;
+    height: 80px;
   }
   .skills-container img {
-    width: 40px;
-    height: 40px;
+    width: 30px;
+    height: 30px;
   }
   .skills-container p {
     font-size: 10px;
+  }
+  .contact-section-container-blur {
+    padding: 0;
+  }
+  .projects-section {
+    padding: 5% 1%;
+  }
+  .project-container {
+    width: 100%;
+  }
+  .project-container img {
+    width: 100%;
   }
 }
 @media (max-height: 650px) {
@@ -651,3 +693,8 @@ footer p {
     font-size: 20px;
   }
 }
+/*  */
+/*  */
+/*  */
+/*  */
+/*  */
