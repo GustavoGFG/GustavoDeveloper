@@ -243,10 +243,10 @@ address a:hover i {
 }
 .hero img {
   position: absolute;
-  bottom: -15%;
-  right: 8%;
+  right: 10%;
   width: 950px;
   max-width: 65vh;
+  bottom: -30px;
 }
 
 /* aboutme skill section */
@@ -566,9 +566,14 @@ footer p {
   }
   .hero img {
     position: static;
-    transform: translateY(10%);
-    width: 95%;
+    margin-top: 50px;
+    /* margin-left: -15%; */
+    width: 950px;
+    max-width: 99%;
+    margin-bottom: -45px;
+    /* max-width: 65vh; */
   }
+
   /* SKILLS ABOUT ME */
   .aboutme-skill-section {
     flex-direction: column;
