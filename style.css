@@ -641,7 +641,7 @@ footer p {
     width: 100%;
   }
   .skills-container ul {
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr;
   }
   .skills-container ul li {
     align-items: center;
@@ -666,6 +666,11 @@ footer p {
   }
   .project-container img {
     width: 100%;
+  }
+}
+@media (max-width: 300px) {
+  .skills-container ul {
+    grid-template-columns: 1fr 1fr;
   }
 }
 @media (max-height: 650px) {
