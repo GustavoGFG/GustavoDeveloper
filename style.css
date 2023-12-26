@@ -4,7 +4,6 @@
   box-sizing: border-box;
   font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande',
     'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-  /* color: var(--title-color); */
 }
 
 /* global */
@@ -181,9 +180,7 @@ nav ul li a:hover {
   align-items: center;
   max-width: 50%;
   z-index: 2;
-  /*  */
   padding: 5vh 0px 0px;
-  /*  */
   position: absolute;
   top: 50%;
   left: 8%;
@@ -204,7 +201,6 @@ h2 strong {
 .hero h1 {
   font-size: 68px;
   margin-bottom: 6vh;
-  /*  */
 }
 .hero-address-cv {
   border-top: 1px solid #7b7880;
@@ -254,7 +250,6 @@ address a:hover i {
 .aboutme-skill-section {
   display: flex;
   background-color: var(--primary-color-regular);
-  /* background: #1b1d1f; */
 }
 
 /* skills side */
@@ -526,12 +521,9 @@ footer p {
     flex-direction: column;
     align-items: center;
     box-shadow: 1px 2px 5px 1px rgba(0, 0, 0, 0.4);
-    /* border-bottom: 1px solid rgba(255, 255, 255, 0.); */
   }
   nav ul li {
     background: var(--primary-color-dark);
-    /* padding: 10px 0px 0px; */
-    /* border: 1px solid red; */
     width: 100%;
     height: 100%;
     text-align: center;
@@ -568,18 +560,15 @@ footer p {
   .hero img {
     position: static;
     margin-top: 50px;
-    /* margin-left: -15%; */
     width: 950px;
     max-width: 99%;
     margin-bottom: -45px;
-    /* max-width: 65vh; */
   }
 
   /* SKILLS ABOUT ME */
   .aboutme-skill-section {
     flex-direction: column;
     text-align: center;
-    /* padding: 0; */
     background: linear-gradient(
       to bottom,
       var(--primary-color-regular),
@@ -704,8 +693,3 @@ footer p {
     font-size: 20px;
   }
 }
-/*  */
-/*  */
-/*  */
-/*  */
-/*  */
