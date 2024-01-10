@@ -85,7 +85,7 @@ ul {
 }
 .return-btn:hover {
   background: var(--third-color);
-  color: #f7914d;
+  color: var(--secondary-color);
 }
 .show {
   display: flex;
@@ -140,7 +140,7 @@ nav ul li a {
 }
 
 nav ul li a:hover {
-  color: #f7914d;
+  color: var(--secondary-color);
   border-bottom: 5px solid var(--secondary-color);
 }
 .mobile-menu {
@@ -196,14 +196,14 @@ nav ul li a:hover {
 }
 h2 strong {
   line-height: 10px;
-  color: #f7914d;
+  color: var(--secondary-color);
 }
 .hero h1 {
   font-size: 68px;
   margin-bottom: 6vh;
 }
 .hero-address-cv {
-  border-top: 1px solid #7b7880;
+  border-top: 1px solid var(--second-sub-title-color);
   display: flex;
   max-width: 95%;
   flex-direction: column;
@@ -232,7 +232,7 @@ address i {
   font-size: 35px;
 }
 address a:hover i {
-  color: #f7914d;
+  color: var(--secondary-color);
 }
 .hero .btn {
   width: 400px;
@@ -296,14 +296,14 @@ address a:hover i {
 
 /* PROJECTS */
 .projects-section {
-  background-color: #3b383f;
+  background-color: var(--primary-color-light);
   display: flex;
   flex-direction: column;
   align-items: center;
 }
 .projects-container {
   flex: 1;
-  color: #f7914d;
+  color: var(--secondary-color);
   display: grid;
   grid-template-columns: repeat(3, 450px);
   grid-gap: 40px;
@@ -357,7 +357,7 @@ address a:hover i {
   color: var(--primary-color-light);
 }
 .projects-section p a {
-  color: #f7914d;
+  color: var(--secondary-color);
   text-decoration: underline;
 }
 .techs-container {
@@ -416,7 +416,7 @@ address a:hover i {
 .contact-section-right {
   flex: 1;
   flex-direction: column;
-  background: #1b1d1f;
+  background: var(--primary-color-regular);
   padding: 80px 40px;
   border-radius: 0px 12px 12px 0px;
 }
