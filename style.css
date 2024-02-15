@@ -361,7 +361,6 @@ address a:hover i {
   text-decoration: underline;
 }
 .techs-container {
-  /* min-height: 180px; */
   flex: 1;
 }
 .project-container .techs {
