@@ -462,6 +462,9 @@ footer p {
   margin: 0;
   text-align: center;
 }
+footer p span {
+  color: var(--secondary-color);
+}
 /* responsive */
 
 @media (max-width: 1600px) {
