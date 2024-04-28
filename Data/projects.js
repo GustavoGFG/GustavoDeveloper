@@ -1,9 +1,9 @@
 import { skills } from './skills.js';
-
+const src = './Assets/Projects/';
 export const projects = [
   // Empty Project Model
   // {
-  //   imageSRC: '',
+  //   imageSRC: `${src}`,
   //   name: '',
   //   type: '',
   //   description: '',
@@ -12,51 +12,75 @@ export const projects = [
   //   codeURL: '',
   // },
   {
-    imageSRC: './Assets/Projects/OmniSystem.png',
+    imageSRC: `${src}OmniSystem.png`,
     name: 'OmniSystem [In Development]',
     type: 'Management System',
     description:
       "Discover OmniSystem: the ultimate business management solution. Effortlessly track sales, manage stock, and stay on top of product expiration dates. Empower your team with a unified platform for streamlined operations. Elevate efficiency and drive success with OmniSystem's versatile capabilities.",
     skillArray: [
       skills.reactjs,
-      skills.tailwind,
+      skills.typescript,
       skills.shadcn,
+      skills.tailwind,
+      skills.nodejs,
       skills.apexcharts,
       skills.chartjs,
       skills.formik,
       skills.bootstrap,
-      skills.nodejs,
       skills.express,
+      skills.postgresql,
+      skills.prisma,
+      skills.zod,
+      skills.axios,
       skills.passport,
-      skills.mongodb,
-      skills.python,
-      skills.selenium,
+      skills.puppeteer,
     ],
     deployURL: '#',
     codeURL: '#',
   },
   {
-    imageSRC: './Assets/Projects/MysteryPal.PNG',
+    imageSRC: `${src}MovieNight.png`,
+    name: 'Movie Library',
+    type: 'Movie Watchlist',
+    description:
+      'Discover and curate your own movie watchlist! Browse a diverse collection of films, from classics to the latest releases. Personalize your movie-watching experience and never miss out on a must-watch. Start building your watchlist today!',
+    skillArray: [
+      skills.nextjs,
+      skills.reactjs,
+      skills.typescript,
+      skills.tailwind,
+      skills.shadcn,
+      skills.nodejs,
+      skills.express,
+      skills.axios,
+      skills.mongodb,
+      skills.passport,
+    ],
+    deployURL: 'https://movieslibrary.vercel.app/',
+    codeURL: 'https://github.com/GustavoGFG/mymovies',
+  },
+  {
+    imageSRC: `${src}MysteryPal.PNG`,
     name: 'Mystery Pal',
     type: 'Gift Exchange Platform',
     description: `Introducing Mystery Pal: your Secret Santa organizer. Create events, form groups, and register participants for seamless gift exchanges. Mystery Pal: where the magic of giving meets effortless organization. <br/><b>Password:</b> ${new Date().toLocaleDateString('en-GB', { day: '2-digit', month: '2-digit', year: 'numeric', timeZone: 'Europe/Berlin' }).split('/').join('')}`,
     skillArray: [
-      skills.typescript,
-      skills.reactjs,
       skills.nextjs,
+      skills.reactjs,
+      skills.typescript,
       skills.tailwind,
       skills.nodejs,
       skills.express,
       skills.axios,
-      skills.prisma,
       skills.postgresql,
+      skills.prisma,
       skills.zod,
     ],
     deployURL: 'https://mysterypal.vercel.app/admin',
     codeURL: 'https://github.com/GustavoGFG/as_frontend',
   },
   {
-    imageSRC: './Assets/Projects/AmazonProductScraper.png',
+    imageSRC: `${src}AmazonProductScraper.png`,
     name: 'Amazon Product Scraper',
     type: 'Web Scraper',
     description:
@@ -74,7 +98,7 @@ export const projects = [
     codeURL: 'https://github.com/GustavoGFG/amazonProductScrapper',
   },
   {
-    imageSRC: './Assets/Projects/OnClick.png',
+    imageSRC: `${src}OnClick.png`,
     name: 'OnClick',
     type: 'E-Commerce',
     description:
@@ -94,7 +118,7 @@ export const projects = [
     codeURL: 'https://github.com/GustavoGFG/onClick',
   },
   {
-    imageSRC: './Assets/Projects/HashtagList.png',
+    imageSRC: `${src}HashtagList.png`,
     name: 'Hashtag List',
     type: 'CRUD',
     description:
@@ -103,14 +127,14 @@ export const projects = [
     deployURL: 'https://lista-hashtag.bubbleapps.io/version-test/',
     codeURL: 'https://bubble.io/page?name=index&id=lista-hashtag&tab=tabs-1',
   },
-  {
-    imageSRC: './Assets/Projects/Starbucks.png',
-    name: 'Clone Starbucks',
-    type: 'Website Clone',
-    description:
-      'This project is a clone of the Starbucks Brasil Website. The goal of the project was to learn and improve my HTML, CSS and JavaScript skills along with the responsive part of the project as well.',
-    skillArray: [skills.html, skills.css, skills.javascript],
-    deployURL: 'https://gustavogfg.github.io/starbucksClone/',
-    codeURL: 'https://github.com/GustavoGFG/starbucksClone',
-  },
+  // {
+  //   imageSRC: `${src}Starbucks.png`,
+  //   name: 'Clone Starbucks',
+  //   type: 'Website Clone',
+  //   description:
+  //     'This project is a clone of the Starbucks Brasil Website. The goal of the project was to learn and improve my HTML, CSS and JavaScript skills along with the responsive part of the project as well.',
+  //   skillArray: [skills.html, skills.css, skills.javascript],
+  //   deployURL: 'https://gustavogfg.github.io/starbucksClone/',
+  //   codeURL: 'https://github.com/GustavoGFG/starbucksClone',
+  // },
 ];
