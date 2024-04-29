@@ -60,7 +60,7 @@ export const projects = [
     codeURL: 'https://github.com/GustavoGFG/mymovies',
   },
   {
-    imageSRC: `${src}MysteryPal.PNG`,
+    imageSRC: `${src}MysteryPal.png`,
     name: 'Mystery Pal',
     type: 'Gift Exchange Platform',
     description: `Introducing Mystery Pal: your Secret Santa organizer. Create events, form groups, and register participants for seamless gift exchanges. Mystery Pal: where the magic of giving meets effortless organization. <br/><b>Password:</b> ${new Date().toLocaleDateString('en-GB', { day: '2-digit', month: '2-digit', year: 'numeric', timeZone: 'Europe/Berlin' }).split('/').join('')}`,
