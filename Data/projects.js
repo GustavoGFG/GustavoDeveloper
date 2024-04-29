@@ -39,7 +39,7 @@ export const projects = [
     codeURL: '#',
   },
   {
-    imageSRC: `${src}MovieNight.png`,
+    imageSRC: `${src}MovieNight.PNG`,
     name: 'Movie Library',
     type: 'Movie Watchlist',
     description:
