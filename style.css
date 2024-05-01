@@ -281,8 +281,9 @@ address a:hover i {
 }
 .skills-container img {
   margin-bottom: 15px;
-  width: 30px;
-  height: 30px;
+  width: 35px;
+  height: 35px;
+  /* background-color: white; */
 }
 .skills-container p {
   font-size: 12px;

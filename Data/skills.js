@@ -6,6 +6,7 @@ export const skills = {
   bubble: { name: 'Bubble', file: 'bubble.png' },
   chartjs: { name: 'Chart Js', file: 'chartjs.png' },
   css: { name: 'CSS', file: 'css.png' },
+  docker: { name: 'Docker', file: 'docker.png' },
   echarts: { name: 'Echarts', file: 'echarts.png' },
   express: { name: 'Express', file: 'express.svg' },
   figma: { name: 'Figma', file: 'figma.png' },
@@ -15,6 +16,7 @@ export const skills = {
   github: { name: 'Github', file: 'github.png' },
   html: { name: 'HTML', file: 'html.png' },
   javascript: { name: 'Javascript', file: 'javascript.png' },
+  jest: { name: 'Jest', file: 'jest.png' },
   mongodb: { name: 'MongoDB', file: 'mongodb.svg' },
   mysql: { name: 'MySQL', file: 'mysql.png' },
   nextjs: { name: 'Next Js', file: 'nextjs.svg' },
@@ -65,4 +67,6 @@ export const profileSkills = [
   skills.figma,
   skills.bubble,
   skills.appsmith,
+  // skills.jest,
+  // skills.docker,
 ];
