@@ -138,3 +138,4 @@ export const projects = [
   //   codeURL: 'https://github.com/GustavoGFG/starbucksClone',
   // },
 ];
+
